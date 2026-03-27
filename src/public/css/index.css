@@ -1,0 +1,100 @@
+＊{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.message{
+    background-color: rgb(174, 194, 174);
+}
+
+.message__inner{
+    max-width: 1230px;
+    padding: 10px 20px;
+    margin-bottom: 70px;
+}
+
+.message__log{
+    color: rgb(26, 83, 64);
+}
+
+.todo__create{
+    margin: 0 auto;
+    max-width: 700px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.todo__text{
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.submit__button{
+    text-decoration: none;
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    
+}
+.todo__list--wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.todo__item--text{
+    max-width: 500px;
+    width: 100%;
+}
+
+.todo__list{
+    padding-left: 0;
+}
+
+.todo__list--title{
+    padding-bottom: 7px;
+}
+
+.todo__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gainsboro;
+    padding: 7px 5px;
+    margin-top: 0;
+        /* ulに勝手につくマージンを確実に殺す */
+    list-style: none;
+        /* 点を消す */
+}
+
+.todo__item:first-child{
+    border-top: 1px solid gainsboro;
+}
+
+.todo__button{
+    display: flex;
+    gap: 0 15px;
+}
+
+.todo__button--add,
+.todo__button--delete{
+        padding: 6px 12px;
+}
+
+button{
+    cursor: pointer;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+    border-radius: 5px;
+}
+
+.todo__button--add{
+    background-color: blue;
+}
+
+.todo__button--delete{
+    background-color: red;
+}
