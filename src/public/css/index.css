@@ -18,37 +18,58 @@
 
 .todo__content {
     margin: 0 auto;
-    padding: 60px 15px;
+    padding: 30px 15px;
     max-width: 1230px;
 }
 
-.create-form {
+h3{
+    width: 70%;
+    margin: 0 auto;
+}
+.create-form,
+.search-form {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 70%;
     text-align: center;
 }
 
-.create-form__item {
+.create-form__item,
+.search-form__item {
     width: 70%;
+    display: flex;
 }
 
-.create-form__item-input {
+.create-form__item-content,
+.create-form__item-category,
+.search-form__item-content,
+.search-form__item-category {
     padding: 10px;
-    width: 100%;
     height: 40px;
     border: 1px solid #ddd;
     border-radius: 3px;
 }
+.create-form__item-content,
+.search-form__item-content {
+    width: 70%;
+}
 
-.create-form__button {
+.create-form__item-category,
+.search-form__item-category {
+    margin-left: 10px;
+    width: 30%;
+}
+
+.create-form__button,
+.search-form__button {
     width: 20%;
 }
 
-.create-form__button-submit {
+.create-form__button-submit,
+.search-form__button-submit {
     padding: 10px;
-    width: 100%;
+    width: 70%;
     height: 40px;
     border: none;
     border-radius: 3px;
@@ -57,10 +78,11 @@
     cursor: pointer;
 }
 
+
+
 .todo-table {
     margin: 30px auto;
     width: 70%;
-    text-align: left;
 }
 
 .todo-table__inner {
@@ -78,9 +100,18 @@
     font-weight: bold;
 }
 
+.todo-table__header-span:nth-child(2){
+    margin-left: 80%;
+}
+
 .todo-table__item:first-of-type {
     padding: 12px;
     width: 90%;
+}
+
+.todo-table__item:nth-child(2) {
+    padding: 12px;
+    width: 10%;
 }
 
 .update-form {
@@ -90,14 +121,23 @@
 }
 
 .update-form__item {
-    width: 80%;
+    width: 100%;
     line-height: 50%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .update-form__item-input {
-    width: 100%;
+    width: 80%;
     outline: none;
     border: none;
+}
+
+.update-form__item-category {
+    width: 50%;
+    outline: none;
+    border: none;
+    
 }
 
 .update-form__button {
